@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 }
 
 class SoundPlayer {
-    var audioPlayer: AVAudioPlayer!
+    private var audioPlayer: AVAudioPlayer!
 
     func playSound(fileName: String, extentionName: String, isRepeat: Bool) {
         let soundURL = Bundle.main.url(forResource: fileName, withExtension: extentionName)
